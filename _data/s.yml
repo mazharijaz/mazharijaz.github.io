@@ -1,0 +1,30 @@
+# General site data
+
+about:
+  firm: WonderHealth
+  name: Mazhar Ijaz, Ph.D
+  certs: MSEd, MA, LMHP, CPC
+  footer:
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+  sidebar:
+    I'm a Lahore based psychologist and I was born and raised here. I completed my Masters in Clinical Psychology
+    from FC University, Lahore in 1987, and have a diploma in Cognitive Psychology and Neurosciences.
+
+contact:
+  address:
+    l1: 123 Blue Ave.
+    l2: Isb., PK 54000
+  phone: '+92 333 1234567'
+  timing: Mon - Fri 12pm - 6pm
+
+social:
+  facebook: https://facebook.com/#
+  twitter: https://facebook.com/#
+  youtube: https://youtube.com/#
+
+tagline: Counseling and psychotherapy for individuals, couples and families
+
+cta:
+  footer:
+    If you come all the way down here, you probably really like our WonderHealth theme. Just click the button below.

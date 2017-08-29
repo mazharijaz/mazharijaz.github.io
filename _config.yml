@@ -1,0 +1,19 @@
+# Site config
+title: WonderHealth - Mazhar Ijaz
+description: This is the description
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mazharijaz.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+
+exclude:
+  - node_modules
+  - README.md
+  - package.json
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE

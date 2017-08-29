@@ -1,0 +1,38 @@
+//
+// Custom CSS
+//
+
+.logo-cont {
+  display: inline-block;
+
+  .stack {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  b, span { display: block; }
+  b {
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+
+  }
+
+  span {
+    font-family: 'Merriweather';
+    font-size: 1.2rem;
+  }
+
+  &__header {
+    @extend .logo-cont;
+    b { color: #414447; }
+    span { color: #979c9f; }
+  }
+
+  &__footer {
+    @extend .logo-cont;
+    b { color: #a1a1a1; }
+    span { color: #d2d2d2; }
+  }
+}

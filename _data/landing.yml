@@ -1,0 +1,43 @@
+# Landing page content
+
+main_text: >
+  As a psychologist and a cognitive behavioral therapist I have worked with hundreds of patients and understand the
+  intricacies of various psychological issues that people face.
+
+
+  My work revolves around being friendly, disciplined and organized yet flexible. I approach my patients and help them
+  resolve their emotional issues of the past and the present, to open the door to a brighter and confident future.
+
+services:
+  - name: Depression treatment
+    img: /assets/images/stock/image-16-100x70.jpg
+    content: >
+      Depression is a mental illness, which one should not confuse
+
+  - name: Individual treatment
+    img: /assets/images/stock/image-27-100x70.jpg
+    content: >
+      Individual treatment is often termed as psychotherapy, and is
+
+  - name: Anxiety treatment
+    img: /assets/images/stock/image-1-100x70.jpg
+    content: >
+      Whether it is social phobia, specific phobia, post traumatic …
+
+  - name: Couples therapy
+    img: /assets/images/stock/image-21-360x240.jpg
+    content: >
+      A relationship goes through numerous phases during its life cycle, and it is obvious for it to have a few rough
+      patches. However, the strength of a relationship is reflected in how the couples deal with those
+
+  - name: Post-divorce recovery
+    img: /assets/images/stock/image-35-360x240.jpg
+    content: >
+      Our systematic approach towards couple therapy is defined on the lines of enhancing the communication between
+      the partners, and establishing short term and long term goals, where both the partners would be
+
+  - name: Therapy for children
+    img: /assets/images/stock/image-54-360x240.jpg
+    content: >
+      There are many emotional issues that find a corner in our heart, and refuse to die down. With time, these issues can
+      transform into a sort of emotional tumor that impacts negatively on our daily life, such as lack of

@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="col-xs-12 col-md-9" role="main">
+  {% include landing/jumbotron.html %}
+
+  <div class="content-container">
+    <article>
+      <div class="panel-grid row">
+        <div class="col-md-6 panel-grid-cell">
+          <div class="so-panel panel-first-child panel-last-child">
+            <h3 class="widget-title">Welcome to my Practice</h3>
+            <div class="textwidget" style="white-space: pre-line;">{{ site.data.landing.main_text | strip}}</div>
+          </div>
+        </div>
+        <div class="col-md-6 row">
+          {% for service in site.data.landing.services limit: 3 %}
+          <div class="so-panel panel-first-child widget_featured_page">
+            <div class="page-box  page-box--inline">
+              <span class="page-box__picture">
+                <img src="{{ service.img }}" width="100" height="70" class="attachment-thumbnail size-thumbnail wp-post-image">
+              </span>
+              <div class="page-box__content">
+                <h5 class="page-box__title text-uppercase"><span >{{ service.name }}</span></h5>
+                <p>{{ service.content }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="panel-grid row">
+        {% for service in site.data.landing.services offset: 3 %}
+        <div class="col-md-4">
+          <div class="so-panel widget widget_pw_featured_page widget-featured-page panel-first-child panel-last-child">
+            <div class="page-box  page-box--block">
+              <span class="page-box__picture">
+                <img src="{{ service.img }}" width="360" height="240" class="attachment-page-box size-page-box wp-post-image" alt="Couples Therapy">
+              </span>
+              <div class="page-box__content">
+                <h5 class="page-box__title  text-uppercase"><span>{{ service.name }}</span></h5>
+                <p>{{ service.content }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </article>
+  </div>
+</div>
+

@@ -1,0 +1,140 @@
+//
+// Bootstrap stylesheets, comment unused asset imports to reduce main.min.css file
+//
+
+// Default Bootstrap variables
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+$enable-flex: true;
+$screen-sm-min: map-get($grid-breakpoints, sm);
+$screen-md-min: map-get($grid-breakpoints, md);
+$screen-xs-min: map-get($grid-breakpoints, xs);
+$screen-lg-min: map-get($grid-breakpoints, lg);
+@import "_variables";
+
+
+@import "bootstrap/mixins";
+@import "bootstrap/print";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/utilities";
+
+//
+// Theme assets
+//
+
+// Custom theme variables
+
+
+
+@import "fonts";
+// @import "theme";
+
+html { font-size: 10px; }
+body {
+  background-image: url("/assets/images/pattern.png");
+  background-color: #f2f4f7;
+  overflow-x: hidden;
+  color: $text-color;
+}
+
+::selection {
+  background-color: #ebedf2;
+}
+
+h3 {
+  letter-spacing: -0.5px;
+}
+
+.widget-title {
+  margin-bottom: 25px;
+}
+
+blockquote {
+  font-size: 13px;
+  border-left: 5px solid $informative-color;
+  font-style: italic;
+}
+
+.content-container {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 2px 3px 0 rgba(31,31,31,0.05);
+  border-radius: 2px;
+
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 60px;
+    padding: 60px;
+  }
+}
+
+/*------------------------------------*\
+  04. Helpers
+\*------------------------------------*/
+
+.fullwidth {
+  width: 100%;
+}
+
+.m-b-lg {
+  margin-bottom: 58px;
+}
+
+.mlr-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/*------------------------------------*\
+  05. Components
+\*------------------------------------*/
+
+// Layout
+@import "components/wp";
+@import "components/wp-widgets";
+@import "components/top-bar";
+@import "components/header";
+@import "components/footer";
+@import "components/sidebar";
+
+// Elements
+@import "components/top-navigation";
+@import "components/main-navigation";
+@import "components/header-navigation";
+@import "components/buttons";
+@import "components/main-title";
+@import "components/latest-posts";
+@import "components/jumbotron";
+@import "components/proteus-widgets";
+@import "components/pagination";
+
+
+@import "custom";
