@@ -1,0 +1,32 @@
+<div class="content-container">
+  <article>
+    <h3 class="widget-title text-sm-center">Some problems and their psychological causes</h3>
+    <div class="table-container readmore-collapsed">
+      <table class="table table-responsive table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Problem</th>
+            <th>Probable cause</th>
+            <th>New thought pattern</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for x in site.data.the_list %}
+          <tr>
+            <td>{{ x.problem }}</td>
+            <td>{{ x.cause }}</td>
+            <td>{{ x.thought }}</td>
+          </tr>
+          {% for y in x.sub %}
+          <tr>
+            <td>{{ x.problem }} - {{ y.problem }}</td>
+            <td>{{ y.cause }}</td>
+            <td>{{ y.thought }}</td>
+          </tr>
+          {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </article>
+</div>

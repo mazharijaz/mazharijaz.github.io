@@ -12,6 +12,7 @@ var $                       = require('jquery');
 global.jQuery               = global.$ = $;
 global.Popper               = require('popper.js');
 global.bootstrap            = require('bootstrap');
+global.jQueryUI             = require('jquery-ui-browserify');
 
 
 // Including app modules

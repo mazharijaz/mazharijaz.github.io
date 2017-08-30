@@ -91,8 +91,7 @@ blockquote {
   border-radius: 2px;
 
   @media (min-width: $screen-md-min) {
-    margin-bottom: 60px;
-    padding: 60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -135,6 +134,5 @@ blockquote {
 @import "components/jumbotron";
 @import "components/proteus-widgets";
 @import "components/pagination";
-
 
 @import "custom";

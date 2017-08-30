@@ -36,3 +36,35 @@
     span { color: #d2d2d2; }
   }
 }
+
+.table-container {
+  position: relative;
+  padding-bottom: 1rem;
+
+  &:before {
+    position: absolute;
+    display: block;
+
+    margin: 0 5%;
+    bottom: 0;
+    width: 90%;
+
+    background: $blue;
+    color: white;
+
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  &.readmore-collapsed {
+    overflow: hidden;
+    height: 40rem;
+
+    &:before { content: 'Show more'; }
+  }
+
+  &:not(.readmore-collapsed) {
+    &:before { content: 'Show less'; }
+  }
+}
