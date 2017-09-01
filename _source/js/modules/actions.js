@@ -6,6 +6,15 @@ module.exports = function (dom) {
     $(this).toggleClass('readmore-collapsed', 250, 'linear');
   });
 
+  dom.document.on('click', '.appt-btn', function (e) {
+    e.preventDefault();
+    if (window.Calendly) {
+      window.Calendly.showPopupWidget('https://calendly.com/mazhar-ijaz/therapy-session');
+    }
+
+    return false;
+  });
+
   dom.document.on('submit', '.contact-form', function (e) {
     e.preventDefault();
     var action = "https://docs.google.com/forms/d/e/1FAIpQLSdBB5HdcmztAPRINEt9VknKY-_vuIRLISc1tRsBD9b6Zb244g/formResponse",
