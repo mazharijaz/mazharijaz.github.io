@@ -148,22 +148,13 @@
 /* Testimonials */
 .testimonial {
 	text-align: center;
-	padding: 20px 15px;
-
-	@media (min-width: $screen-md-min) {
-		padding: 45px 50px 30px 50px;
-	}
+	padding: 2px 1px;
 
 	.widget-title {
 		display: inline-block;
 		font-size: 1.8rem;
 		padding-bottom: 20px;
 		margin-bottom: 0;
-
-		@media (min-width: $screen-md-min) {
-			font-size: 2.4rem;
-			padding-bottom: 45px;
-		}
 	}
 
 	blockquote {
@@ -172,31 +163,23 @@
 		font-size: inherit;
 		border-left: 0;
 		font-style: normal;
-
-		@media (min-width: $screen-md-min) {
-			margin: 0 10px;
-		}
 	}
 
 	&__quote {
 		position: relative;
 		background: #ffffff;
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-		padding: 15px 15px 15px 45px;
+		padding: 1px 15px 15px 45px;
 		color: $text-color;
 		border: 0;
 		margin-bottom: 30px;
 		font-size: 1.4rem;
 
-		@media (min-width: $screen-md-min) {
-			padding: 45px 45px 45px 75px;
-		}
-
 		&::before {
 			position: absolute;
 			content: '“';
 			font-family: Georgia, "Times New Roman";
-			top: 30px;
+			top: 0;
 			left: 0;
 			background: $informative-color;
 			color: #ffffff;
@@ -204,13 +187,6 @@
 			height: 30px;
 			font-size: 4rem;
 			line-height: 55px;
-
-			@media (min-width: $screen-md-min) {
-				width: 45px;
-				height: 45px;
-				font-size: 5rem;
-				line-height: 73px;
-			}
 		}
 
 		&::after {
@@ -232,6 +208,10 @@
 		font-family: $secondary-font;
 		font-style: normal;
 		text-transform: uppercase;
+
+		&-description {
+			display: inline;
+		}
 	}
 
 	&__carousel {
@@ -248,14 +228,6 @@
 		line-height: 28px;
 		height: 24px;
 		width: 24px;
-
-		@media (min-width: $screen-md-min) {
-			height: 40px;
-			width: 40px;
-			font-size: 1.4rem;
-			margin: 0 30px;
-			line-height: 44px;
-		}
 
 		&:hover {
 			color: darken(#caced7, 5);

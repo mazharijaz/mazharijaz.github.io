@@ -19,11 +19,6 @@ services:
     content: >
       Individual treatment is often termed as psychotherapy, and is
 
-  - name: Anxiety treatment
-    img: /assets/images/stock/image-1-100x70.jpg
-    content: >
-      Whether it is social phobia, specific phobia, post traumatic …
-
   - name: Couples therapy
     img: /assets/images/stock/image-21-360x240.jpg
     content: >

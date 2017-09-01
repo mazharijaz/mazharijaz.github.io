@@ -15,7 +15,7 @@ layout: default
           </div>
         </div>
         <div class="col-md-6 row">
-          {% for service in site.data.landing.services limit: 3 %}
+          {% for service in site.data.landing.services limit: 2 %}
           <div class="so-panel panel-first-child widget_featured_page">
             <div class="page-box  page-box--inline">
               <span class="page-box__picture">
@@ -31,7 +31,7 @@ layout: default
         </div>
       </div>
       <div class="panel-grid row">
-        {% for service in site.data.landing.services offset: 3 %}
+        {% for service in site.data.landing.services offset: 2 %}
         <div class="col-md-4">
           <div class="so-panel widget widget_pw_featured_page widget-featured-page panel-first-child panel-last-child">
             <div class="page-box  page-box--block">
@@ -50,5 +50,6 @@ layout: default
     </article>
   </div>
   {% include landing/table.html %}
+  {% include landing/testimonials.html %}
 </div>
 

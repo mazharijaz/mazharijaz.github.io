@@ -23,7 +23,7 @@ module.exports = function (dom) {
 
     $.ajax(action, {
       cache: false,
-      timout: 1000,
+      timeout: 1000,
       xhrFields: { withCredentials: true },
       type: 'POST',
       dataType: 'JSONP text html',
