@@ -2,7 +2,7 @@
 title: WonderHealth - Mazhar Ijaz
 description: This is the description
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mazharijaz.github.io" # the base hostname & protocol for your site
+url: "https://wonderhealthfor.me" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
