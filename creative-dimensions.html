@@ -1,0 +1,68 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creative Dimensions - Certifications</title>
+  <style type="text/css">
+    body { margin: 0; padding: 0; }
+    .container { width: 100%; }
+    h3 { text-align: center; }
+    aside { width: 20%; display: inline-block; }
+    li { padding: 10px; }
+    .pdf-viewer {
+      width: 79%;
+      height: 99vh;
+      display: inline-block;
+      background: rgb(82, 86, 89);
+      color: white;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <h3>Creative Dimension Certifications</h3>
+      <ul>
+        {% for cert in site.data.certs %}
+          <li class="btn" data-url="{{ cert.location }}">
+            <a href="javascript:void(0);">
+              {{ cert.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
+
+    <div class="pdf-viewer">
+      {% assign x = site.data.certs | first %}
+      <object id="obj" data="{{ x.location }}" type="application/pdf" width="100%" height="100%">
+        <embed id="emb" src="{{ x.location }}" type="application/pdf" width="100%" height="100%">
+          <p>This browser does not support PDFs. Please download the PDF to view it:
+            <a id="lnk" href="{{ x.location }}" target="_blank">Download PDF</a>.
+          </p>
+        </embed>
+      </object>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var btn = document.getElementsByClassName('btn');
+
+      $('.btn').click(function(){
+        var url = $(this).data('url');
+        var obj = $('#obj'),
+            emb = $('emb'),
+            lnk = $('lnk');
+
+        obj.attr('data', url);
+        emb.attr('src',  url);
+        lnk.attr('href', url);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -2,19 +2,20 @@
 
 about:
   firm: WonderHealth
-  name: Mazhar Ijaz, Ph.D
+  name: Mazhar Ijaz
   certs: MSEd, MA, LMHP, CPC
   footer:
     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
     layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
   sidebar:
-    I'm a Lahore based psychologist and I was born and raised here. I completed my Masters in Clinical Psychology
-    from FC University, Lahore in 1987, and have a diploma in Cognitive Psychology and Neurosciences.
+    I'm a Lahore based psychologist and I was born and raised here. I am certified NLP practitioner, EFT healer
+    and reiki master. I can help you out from tension, depression, anxiety, relationship problems, bad memories,
+    stress of any kind and emotional disturbance.
 
 contact:
   address:
-    l1: 123 Blue Ave.
-    l2: Isb., PK 54000
+    l1: Lahore
+    l2: Pakistan 54000
   phone: '+92 333 1234567'
   timing: Mon - Fri 12pm - 6pm
 
